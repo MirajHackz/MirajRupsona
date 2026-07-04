@@ -1,0 +1,10 @@
+body{margin:0;height:100vh;display:flex;justify-content:center;align-items:center;background:#090913;color:#fff;font-family:Arial;overflow:hidden}
+.center{text-align:center;z-index:2}
+.heart{width:120px;height:120px;background:#ff2d55;transform:rotate(-45deg);margin:20px auto;animation:beat 1s infinite}
+.heart:before,.heart:after{content:'';position:absolute;width:120px;height:120px;background:#ff2d55;border-radius:50%}
+.heart:before{top:-60px;left:0}.heart:after{left:60px;top:0}
+@keyframes beat{0%,100%{transform:rotate(-45deg) scale(1)}50%{transform:rotate(-45deg) scale(1.15)}}
+button{padding:12px 24px;border:none;border-radius:30px;background:#ff2d55;color:#fff;font-size:16px;cursor:pointer}
+#msg{margin-top:20px;font-size:22px;color:#ffb3c7}
+.stars{position:fixed;inset:0;background:radial-gradient(circle,#ffffff66 1px,transparent 1px);background-size:30px 30px;animation:move 15s linear infinite;opacity:.3}
+@keyframes move{from{transform:translateY(0)}to{transform:translateY(30px)}}
